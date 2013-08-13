@@ -1,0 +1,27 @@
+
+html {
+  height: 80%;
+}
+body {
+  text-align:center;
+  /*text-align:left;*/
+  height:100%;
+  margin:100px auto;
+  width:500px;
+}
+.content{
+  text-align:left;
+  background:#F1F4F6;
+  /*background: #F1F4F6 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAA6CAYAAAB4Q5OdAAAACXBIWXMAAAsTAAALEwEAmpwYAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAABKklEQVR42mL8DwQMaAAggJgYsACAAMIqCBBAWAUBAgirIEAAYRUECCAWLJYzAAQQy38sKgECCKt2gADCKggQQFgFAQIIq0UAAYRVJUAAYRUECCCsggABhFUQIIBYsNjDABBAWFUCBBALAwOmUoAAwqoSIICwCgIEEFaLAAIIq0qAAMIqCBBAWAMEIICwqgQIIKyCAAGEVRAggLAKAgQQVkGAAMIqCBBAWJ0EEEBYVQIEEFZBgADCmmwAAgirSoAAwioIEEBYbQcIIKwqAQIIqyBAAGEVBAggrIIAAYQ14gACCKtKgADC6iSAAMKqEiCAsAoCBBBWQYAAwioIEEBYkyJAAGFVCRBAWAUBAgirjwACCGt0AAQQVu0AAYRVECCAsAoCBBDWAAEIMAAoCSZuy+v+UQAAAABJRU5ErkJggg==') repeat-x top;*/
+  background: #F1F4F6
+  border:solid 1px #DFDFDF;
+  margin-bottom:20px;
+  margin-top:20px;
+  padding-top:50px;
+  padding-bottom:50px;
+  padding-right:0px;
+  padding-left:50px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  height:60%;
+}
