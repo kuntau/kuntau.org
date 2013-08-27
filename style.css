@@ -1,21 +1,21 @@
 
-body {
-  /* text-align:center; */
-  /* margin:100px auto; */
-  width:500px;
+.container {
+  text-align:center;
   font-family: 'Source Code Pro', sans-serif;
+  /* background-color: #7a7a7a; */
 }
 h1 {
   text-shadow: 0 1px 1px #eee;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
+h2 { text-shadow: 0 1px 1px #fff; }
+
 .content {
   text-align:left;
   background:#F1F4F6;
   border:solid 1px #DFDFDF;
-  margin-bottom:20px;
-  margin-top:20px;
-  padding: 50px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
+  padding: 0 100px;
+  position: relative;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
 }
