@@ -10,6 +10,9 @@
         <script src="bower_components/jquery/jquery.min.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="bower_components/angular/angular.min.js"></script>
+        <script src="script.js"></script>
+        <!-- <script src="script.coffee"></script> -->
+        <script src="http://localhost:35729/livereload.js"></script>
     </head>
     <body>
         <div class="container" ng-app>
@@ -36,6 +39,9 @@
                             <li>stylus</li>
                         </ul>
                     <h2><i class="icon-bug icon-spin"></i> teh junks</h2>
+                        <ul class="icons-ul">
+                            <li ng-repeat="stack in technology_stacks"><i class="icon-li {{stack.icon}}"></i><a href="{{stack.url}}">{{stack.text}}</a></li>
+                        </ul>
                         <ul class="icons-ul">
                             <li>bootstrap 3</li>
                             <li>ember.js</li>

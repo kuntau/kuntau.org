@@ -1,6 +1,5 @@
-Dropbox
-dl
-_cgi-bin
-_errorpages
+node_modules
+dist
+.tmp
+.sass-cache
 bower_components
-codekit-config.json
