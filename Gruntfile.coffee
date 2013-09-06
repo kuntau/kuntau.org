@@ -8,7 +8,14 @@ module.exports = (grunt) ->
         livereload: true
       files: ['index.html', 'script.js', 'style.css']
 
+    coffee:
+      compile:
+        options:
+          bare: true
+        files:
+          'script.js': 'script.coffee'
+
   grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
 
-  grunt.registerTask 'default', ['watch']
+  grunt.registerTask 'default', ['watch', 'coffee']
