@@ -7,6 +7,11 @@ module.exports = (grunt) ->
       options:
         livereload: true
       files: ['index.html', 'script.js', 'style.css']
+    coffee:
+      options:
+        bare: true
+      files:
+        'script.js': 'script.coffee'
 
     coffee:
       compile:
