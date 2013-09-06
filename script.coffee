@@ -1,14 +1,36 @@
 #my cup of coffee
 
-CtrlContent = ($scope) ->
+app = angular.module 'KuntauOrg', []
 
-  $scope.technology_stacks = [
-    name: 'node.js'
-    url: 'http://nodejs.org'
-  ,
-    name: 'coffeescript'
-    url: 'http://coffeescript.org'
-  ,
-    name: 'angularjs'
-    url: 'http://angularjs.org'
-  ]
+app.controller 'ContentCtrl',
+  class ContentCtrl
+    technology_stacks : [
+      name: 'node.js'
+      url: 'http://nodejs.org'
+      icon: 'icon-cog'
+    ,
+      name: 'coffeescript'
+      url: 'http://coffeescript.org'
+      icon: 'icon-coffee'
+    ,
+      name: 'angularjs'
+      url: 'http://angularjs.org'
+      icon: 'icon-envelope'
+    ,
+      name: 'bootstrap'
+      url: 'http://getbootstrap.com'
+      icon: 'icon-barcode'
+    ,
+      name: 'jade'
+      url: 'http://jade-lang.org'
+      icon: 'icon-tint'
+    ,
+      name: 'stylus'
+      url: 'http://learnboost.github.io/stylus'
+      icon: 'icon-adjust'
+    ]
+    openDoor: () ->
+      alert 'yoooo'
+
+app.filter 'nativesort', () ->
+  (input, options) -> input.sort()

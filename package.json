@@ -19,7 +19,9 @@
   "bugs": {
     "url": "https://github.com/kuntau/kuntau.org/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "coffee-script": "~1.6.3"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-watch": "~0.5.3",

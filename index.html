@@ -5,25 +5,19 @@
         <title>The New Journey | Kuntau.org</title>
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
-        <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+        <!-- <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'> -->
         <link rel="stylesheet" href="style.css">
-        <script src="bower_components/jquery/jquery.min.js"></script>
-        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="bower_components/angular/angular.min.js"></script>
-        <script src="script.js"></script>
-        <!-- <script src="script.coffee"></script> -->
-        <script src="http://localhost:35729/livereload.js"></script>
     </head>
     <body>
-        <div class="container" ng-app>
+        <div class="container">
             <header class='row'>
                 <h1>kuntau's playground!</h1>
             </header>
-            <section class="row">
-                <div class="col-md-6 col-md-offset-3 content" ng-controller="CtrlContent">
+            <section class="row" data-ng-app="KuntauOrg" ng-controller="ContentCtrl as contents">
+                <div class="col-md-6 col-md-offset-3 content">
                     <h2><i class="icon-male icon-spin"></i> web presence</h2>
                         <ul class="icons-ul">
-                            <li><i class="icon-li icon-file-text"></i><a href="http://blog.kuntau.org/">blog</a></li>
+                            <li><i class="icon-li icon-home"></i><a href="http://blog.kuntau.org/">blog</a></li>
                             <li><i class="icon-li icon-twitter"></i><a href="http://twitter.com/kuntau">twitter</a></li>
                             <li><i class="icon-li icon-facebook"></i><a href="http://facebook.com/kuntau">facebook</a></li>
                             <li><i class="icon-li icon-github-alt"></i><a href="http://github.com/kuntau">github</a></li>
@@ -31,17 +25,9 @@
                         </ul>
                     <h2><i class="icon-gears icon-spin"></i> technology stack</h2>
                         <ul class="icons-ul">
-                            <li><i class="icon-li icon-cog"></i><a href="http://nodejs.org">node.js</a></li>
-                            <li><i class="icon-li icon-coffee"></i><a href="#">coffee</a></li>
-                            <li>angular.js</li>
-                            <li><a href="#">bootstrap</a></li>
-                            <li>jade</li>
-                            <li>stylus</li>
+                            <li ng-repeat='stack in contents.technology_stacks | orderBy:"name"' ><i class="icon-li {{stack.icon}}"></i><a href="{{stack.url}}">{{stack.name | lowercase}}</a></li>
                         </ul>
                     <h2><i class="icon-bug icon-spin"></i> teh junks</h2>
-                        <ul class="icons-ul">
-                            <li ng-repeat="stack in technology_stacks"><i class="icon-li {{stack.icon}}"></i><a href="{{stack.url}}">{{stack.text}}</a></li>
-                        </ul>
                         <ul class="icons-ul">
                             <li>bootstrap 3</li>
                             <li>ember.js</li>
@@ -58,5 +44,11 @@
                 <p>&copy; copyrigh 2013 - nizamuddin sulieman</p>
             </footer>
         </div>
+        <!-- <script src="bower_components/jquery/jquery.min.js"></script> -->
+        <!-- <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script> -->
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="script.js"></script>
+        <!-- <script type="text/coffeescript" src="script.coffee"></script> -->
+        <script src="http://localhost:35729/livereload.js"></script>
     </body>
 </html>

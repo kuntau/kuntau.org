@@ -4,17 +4,24 @@
   font-family: 'Source Code Pro', sans-serif;
 }
 h1 {
+  font-size: 80px;
   text-shadow: 0 1px 1px #eee;
-  text-transform: lowercase;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 h2 { text-shadow: 0 1px 1px #fff; }
 
 .content {
   text-align:left;
   background:#E6F0FF;
-  border:solid 1px #1A0033;
+  /* border:solid 1px #1A0033; */
   padding: 0 100px;
   position: relative;
   -moz-border-radius: 30px;
   border-radius: 30px;
+  display: block;
+}
+
+section {
+  margin-top: 50px;
 }
