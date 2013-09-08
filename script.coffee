@@ -34,3 +34,6 @@ app.controller 'ContentCtrl',
 
 app.filter 'nativesort', () ->
   (input, options) -> input.sort()
+
+app.filter 'reverse', () ->
+  (input, options) -> input.split('').reverse.join('')
