@@ -4,15 +4,13 @@ module.exports = (grunt) ->
   grunt.initConfig
     pkg: grunt.file.readJSON 'package.json'
     watch:
-      options:
-        livereload: true
-      files: ['index.html', 'script.js', 'style.css']
-    coffee:
-      compile:
+      coffee:
+        files: ['script.coffee']
+        tasks: ['coffee']
+      livereload:
         options:
-          bare: true
-        files:
-          'script.js': 'script.coffee'
+          livereload: true
+        files: ['index.html', 'script.js', 'style.css']
 
     coffee:
       compile:

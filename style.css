@@ -3,15 +3,19 @@
   text-align:center;
   font-family: 'Source Code Pro', sans-serif;
 }
+header {
+  text-align: center;
+  background-color: #3c3c3c;
+}
 h1 {
   font-size: 80px;
-  text-shadow: 0 1px 1px #eee;
+  text-shadow: 1px 1px 1px #ccc;
   text-transform: uppercase;
   font-weight: bold;
   display: block;
   color: #00b3ee;
 }
-h2 { text-shadow: 0 1px 1px #fff; }
+h2 { text-shadow: 1px 1px 0 #aaa; }
 
 .content {
   text-align:left;
@@ -25,10 +29,10 @@ h2 { text-shadow: 0 1px 1px #fff; }
 }
 
 section {
-  margin-top: 50px;
+  padding: 50px 0;
+  background-color: #aeaeae;
 }
 
 footer {
-    /*background-color: #3c3c3c;*/
-    margin-top: 50px;
+  background-color: #ececec;
 }
