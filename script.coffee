@@ -31,9 +31,30 @@ app.controller 'ContentCtrl',
     ]
     openDoor: () ->
       alert 'yoooo'
+    face: 'facepalm'
+    foot:
+      fp: 'footplant'
+      f:  'footage'
 
 app.filter 'nativesort', () ->
   (input, options) -> input.sort()
 
 app.filter 'reverse', () ->
-  (input, options) -> input.split('').reverse.join('')
+  (input, options) -> input.split('').reverse().join('')
+
+$('#webpresence a').tooltip({
+  animation: false
+  trigger: 'hover'
+  placement: 'right'
+  title: 'ContentCtrl.face'
+  delay: 200
+  html: false
+})
+
+$('#popover').popover({
+  animation: false
+  html: true
+  trigger: 'hover'
+  placement: 'bottom'
+  content: '<img src="http://lorempixel.com/200/200/cats" />'
+})

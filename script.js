@@ -37,6 +37,13 @@ app.controller('ContentCtrl', ContentCtrl = (function() {
     return alert('yoooo');
   };
 
+  ContentCtrl.prototype.face = 'facepalm';
+
+  ContentCtrl.prototype.foot = {
+    fp: 'footplant',
+    f: 'footage'
+  };
+
   return ContentCtrl;
 
 })());
@@ -49,6 +56,23 @@ app.filter('nativesort', function() {
 
 app.filter('reverse', function() {
   return function(input, options) {
-    return input.split('').reverse.join('');
+    return input.split('').reverse().join('');
   };
+});
+
+$('#webpresence a').tooltip({
+  animation: false,
+  trigger: 'hover',
+  placement: 'right',
+  title: 'ContentCtrl.face',
+  delay: 200,
+  html: false
+});
+
+$('#popover').popover({
+  animation: false,
+  html: true,
+  trigger: 'hover',
+  placement: 'bottom',
+  content: '<img src="http://lorempixel.com/200/200/cats" />'
 });

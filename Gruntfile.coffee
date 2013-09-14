@@ -7,6 +7,9 @@ module.exports = (grunt) ->
       coffee:
         files: ['script.coffee']
         tasks: ['coffee']
+      stylus:
+        files: ['style.styl']
+        tasks: ['stylus']
       livereload:
         options:
           livereload: true
@@ -18,8 +21,13 @@ module.exports = (grunt) ->
           bare: true
         files:
           'script.js': 'script.coffee'
+    stylus:
+      compile:
+        files:
+          'style.css': 'style.styl'
 
   grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
+  grunt.loadNpmTasks 'grunt-contrib-stylus'
 
-  grunt.registerTask 'default', ['watch', 'coffee']
+  grunt.registerTask 'default', ['watch', 'coffee', 'stylus']
