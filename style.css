@@ -1,27 +1,7 @@
-
-html {
-  height: 80%;
-}
-body {
-  text-align:center;
-  /*text-align:left;*/
-  height:100%;
-  margin:100px auto;
-  width:500px;
-}
-.content{
-  text-align:left;
-  background:#F1F4F6;
-  /*background: #F1F4F6 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAA6CAYAAAB4Q5OdAAAACXBIWXMAAAsTAAALEwEAmpwYAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAABKklEQVR42mL8DwQMaAAggJgYsACAAMIqCBBAWAUBAgirIEAAYRUECCAWLJYzAAQQy38sKgECCKt2gADCKggQQFgFAQIIq0UAAYRVJUAAYRUECCCsggABhFUQIIBYsNjDABBAWFUCBBALAwOmUoAAwqoSIICwCgIEEFaLAAIIq0qAAMIqCBBAWAMEIICwqgQIIKyCAAGEVRAggLAKAgQQVkGAAMIqCBBAWJ0EEEBYVQIEEFZBgADCmmwAAgirSoAAwioIEEBYbQcIIKwqAQIIqyBAAGEVBAggrIIAAYQ14gACCKtKgADC6iSAAMKqEiCAsAoCBBBWQYAAwioIEEBYkyJAAGFVCRBAWAUBAgirjwACCGt0AAQQVu0AAYRVECCAsAoCBBDWAAEIMAAoCSZuy+v+UQAAAABJRU5ErkJggg==') repeat-x top;*/
-  background: #F1F4F6
-  border:solid 1px #DFDFDF;
-  margin-bottom:20px;
-  margin-top:20px;
-  padding-top:50px;
-  padding-bottom:50px;
-  padding-right:0px;
-  padding-left:50px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-  height:60%;
-}
+.container{text-align:center;font-family:'PragmataPro','Source Code Pro',sans-serif}
+header{text-align:center;background-color:#3c3c3c}
+h1{font-size:50px;text-shadow:1px 1px 1px #ccc;text-transform:uppercase;font-weight:bold;display:block;color:#00b3ee;font-family:'Consolas',serif}
+h2{text-shadow:1px 1px 0 #aaa}
+.content{text-align:left;padding-left:150px;position:relative;display:block}
+section{padding:20px 0;background-color:#aeaeae;border-radius:0 0 90px 10px}
+footer{padding:10px 0}

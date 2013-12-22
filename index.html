@@ -1,40 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>The New Journey | Kuntau.org</title>
-        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
-        <link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
-        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Kuntau's Playground!</h1>
-        <div class="content">
-            <h2>Recent junks</h2>
-                <ul>
-                    <li><a href="http://blog.kuntau.org/">blog</a></li>
-                    <li><a href="http://sandbox.kuntau.org">sandbox</a></li>
-                </ul>
-            <h2>Technology stack</h2>
-                <ul>
-                    <li><a href="/Bootstrap">bootstrap</a></li>
-                    <li>angular.js</li>
-                    <li>coffeescript</li>
-                    <li>jade</li>
-                    <li>stylus</li>
-                </ul>
-            <h2>Upcoming Junks</h2>
-                <ul>
-                    <li>Ember.js</li>
-                    <li>Backbone.js</li>
-                    <li>Underscore.js</li>
-                    <li>Meteor.js</li>
-                </ul>
-        </div>
-        <div class="poweredbox">
-            <a href="https://clientarea.ramnode.com/aff.php?aff=362"><img src="http://www.ramnode.com/images/banners/affbannerdark.png" alt="high performance ssd vps" /></a>
-            <p>&copy; Copyrigh 2013 - Nizamuddin Sulieman</p>
-        </div>
-    </body>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>The New Journey | Kuntau.org</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="bower_components/angular-ui/build/angular-ui.min.css"/>
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"/>
+  <!-- <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'> -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <header class="row">
+    <h1 class="col-md-8 col-md-offset-2">da playground!</h1>
+  </header>
+  <section class="row" data-ng-app="KuntauOrg" ng-controller="ContentCtrl as contents">
+    <div class="col-md-6 col-md-offset-3 content">
+      <div>
+        <h2><i class="icon-male icon-spin"></i> web presence</h2>
+        <ul id="webpresence" class="icons-ul">
+          <li><i class="icon-li icon-home"></i><a href="http://blog.kuntau.org/">blog</a></li>
+          <li><i class="icon-li icon-twitter"></i><a href="http://twitter.com/kuntau">twitter</a></li>
+          <li><i class="icon-li icon-facebook"></i><a href="http://facebook.com/kuntau">facebook</a></li>
+          <li><i class="icon-li icon-github-alt"></i><a title="GitHub: Social Coding" href="http://github.com/kuntau">github</a></li>
+          <li><i class="icon-li icon-code"></i><a data-toggle="tooltip" title="My sandbox?" href="http://sandbox.kuntau.org">sandbox</a></li>
+        </ul>
+      </div>
+      <h2><i class="icon-gears icon-spin"></i> technology stack</h2>
+      <ul class="icons-ul">
+        <li ng-repeat='stack in contents.technology_stacks | orderBy:"name"'><i class="icon-li {{stack.icon}}"></i><a
+          href="{{stack.url}}">{{stack.name}}</a></li>
+      </ul>
+      <h2><i class="icon-edit icon-spin"></i> a button that speak!</h2>
+      <div>
+        <a href="#" id="popover" class="btn btn-primary" title="aiyam da katz">{{contents.foot.fp | reverse }} da link</a>
+        <a href="#" id="popover" class="btn btn-default" title="aiyam da katz">{{contents.foot.fp | reverse }} da link</a>
+      </div>
+      <h2><i class="icon-bug icon-spin"></i> teh junks</h2>
+      <ul class="icons-ul">
+        <li>bootstrap 3</li>
+        <li>ember.js</li>
+        <li>backbone.js</li>
+        <li>underscore.js</li>
+        <li>meteor.js</li>
+      </ul>
+    </div>
+  </section>
+  <footer class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <!-- <a href="https://clientarea.ramnode.com/aff.php?aff=362"><img -->
+      <!--   src="http://www.ramnode.com/images/banners/affbannerdark.png" alt="high performance ssd vps"/></a> -->
+
+      <p>&copy; copyrigh 2013 - nizamuddin sulieman</p>
+    </div>
+  </footer>
+</div>
+<script src="http://localhost:35729/livereload.js"></script>
+<script src="bower_components/jquery/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-ui/build/angular-ui.min.js"></script>
+<script src="script.js"></script>
+</body>
 </html>

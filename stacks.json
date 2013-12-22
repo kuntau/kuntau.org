@@ -1,0 +1,8 @@
+  {
+"node": { "name": "node.js", "url": "http://nodejs.org", "icon": "icon-cog" },
+"coffee": { "name": "coffeescript", "url": "http://coffeescript.org", "icon": "icon-coffee" },
+"angular": { "name": "angularjs", "url": "http://angularjs.org", "icon": "icon-envelope" },
+"bootstrap": { "name": "bootstrap", "url": "http://getbootstrap.com", "icon": "icon-barcode" },
+"jade": { "name": "jade", "url": "http://jade-lang.org", "icon": "icon-tint" },
+"stylus": { "name": "stylus", "url": "http://learnboost.github.io/stylus", "icon": "icon-adjust" }
+}

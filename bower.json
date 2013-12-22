@@ -10,6 +10,14 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "~3.0.0-rc1"
+    "bootstrap": "~3.0.0",
+    "jquery": "~2.0.3",
+    "angular-bootstrap": "~0.6.0",
+    "angular": "~1.2.0-rc.2",
+    "angular-ui": "~0.4.0",
+    "font-awesome": "~3.2.1"
+  },
+  "resolutions": {
+    "angular-bootstrap": "~0.6.0"
   }
 }
