@@ -1,7 +1,10 @@
-Dropbox
-dl
-_cgi-bin
-_errorpages
+node_modules
+dist
+.tmp
+.sass-cache
 bower_components
 _h5ai
 codekit-config.json
+.idea
+dl
+_errorpages
