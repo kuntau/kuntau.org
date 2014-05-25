@@ -9,27 +9,27 @@ app.controller('ContentCtrl', ContentCtrl = (function() {
     {
       name: 'node.js',
       url: 'http://nodejs.org',
-      icon: 'icon-cog'
+      icon: 'fa-cog'
     }, {
       name: 'coffeescript',
       url: 'http://coffeescript.org',
-      icon: 'icon-coffee'
+      icon: 'fa-coffee'
     }, {
       name: 'angularjs',
       url: 'http://angularjs.org',
-      icon: 'icon-envelope'
+      icon: 'fa-envelope'
     }, {
       name: 'bootstrap',
       url: 'http://getbootstrap.com',
-      icon: 'icon-barcode'
+      icon: 'fa-barcode'
     }, {
       name: 'jade',
       url: 'http://jade-lang.org',
-      icon: 'icon-tint'
+      icon: 'fa-tint'
     }, {
       name: 'stylus',
       url: 'http://learnboost.github.io/stylus',
-      icon: 'icon-adjust'
+      icon: 'fa-adjust'
     }
   ];
 
